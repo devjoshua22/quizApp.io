@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="one.css">
+    <title>questions</title>
+</head>
+<body>
+    <div id="quiz">
+        <button id="hint" onclick="hint()">0Points</button>
+        <p id="questions"> </p>
+        <form >
+            <input type="radio" name="answer" value="true"  id="A" class="answer"id="A-text"><label for="A"id="A-text">A.   Answer </label><br>
+            <input type="radio" name="answer" value="false"  id="B"class="answer"id="B-text"><label for="B"id="B-text">B.  Answer </label><br>
+           <input type="radio" name="answer" value="false"  id="C"class="answer"id="C-text"><label for="C"id="C-text">C.   Answer  </label><br>
+            <input type="radio" name="answer" value="false"  id="D"class="answer"id="D-text"><label for="D"id="D-text">D.    Answer </label><br>
+       </form>
+       <br>
+    <button type="submit" value="submit" id="submit" onclick="next()" ondblclick="next()" onseeked="next()"> <h1>Next</h1></a></button>
+    <script src="quiz.js"></script> 
+</div>
+</body>
+</html>
