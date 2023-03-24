@@ -1,5 +1,12 @@
+:root{
+    --dark-theme:#333;
+    --button-color: rgb(22, 21, 21);
+    --text-color:#fff;
+    --box-shadow:8px 8px 40px -19px #fff;
+    --hover-box-shadow:8px 8px 50px -15px #fff;
+}
 body{
-    background-color: #333;
+    background-color:var(--dark-theme);
     background-position: 10px 50px;
     text-align: center;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -22,7 +29,7 @@ body{
 p { 
     flex-grow: 3;
     display: inline-block;
-    color:#fff;
+    color:var(--text-color);
     font-size: 20px;
     font-weight: 700;
 }
@@ -33,27 +40,29 @@ form {
     width: 70%;
     font-size: 18px;
     text-align: left;
-    box-shadow: 8px 8px 40px -19px #fff;
-    background-color: rgb(22, 21, 21);
+    box-shadow:var(--box-shadow) ;
+    background-color: var(--button-color);
     border-radius: 3%;
     padding: 10px 20px;
 }
 
 button {
-    flex-grow: 2;
+    flex-grow: 1;
     max-height: 100px;
+    height: 80px;
     width: 45%;
     max-width: 300px;
-    display: block;
     text-align: center;
-    background-color:#fff;
+    background-color:var(--button-color);
+    box-shadow: var(--box-shadow);
     border: none;
     border-radius: 2%;
-    padding: 10px 10px 10px 10px ;
+    padding: 5px 5px 5px 5px ;
+    margin-top:50px ;
     border-radius: 3%;
 }
 button h1 {
-   color:#333;
+   color:var(--text-color);
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
@@ -64,21 +73,23 @@ button h1 {
     margin: 0;
     text-align: center;
     margin-left: 85%;
-    height: 30px;
-    width: 16%;
+    height: 60px;
+    width: 10%;
     border-radius: 50%;
-    box-shadow: 8px 8px 40px -19px crimson;
+    background-color: var(--button-color);
+    color:var(--text-color);
+    box-shadow: var(--box-shadow);
     font-weight: 500;
  }
  #hint:hover{
-    box-shadow: 8px 8px 40px -11px crimson;
+    box-shadow:var(--hover-box-shadow);
  }
 button  a {
     text-decoration: none;
 }
  button:hover{
    cursor: pointer;
-    background-color: #d4caca;
+    box-shadow: var(--hover-box-shadow);
     transform: translateY(-1px);
     }
     input[type="radio"]{
@@ -91,7 +102,7 @@ button  a {
         background-position: 0 -31px;
         line-height: 20px;
         height: 20px;
-        color: #fff;
+        color: var(--text-color);
         cursor: pointer;
         display: inline-block;
         margin: 8px;

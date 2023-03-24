@@ -171,9 +171,9 @@ const submitBtn = document.getElementById("submit")
 const hintEl = document.getElementById("hint")
 let currentQuiz = 0
 const quiz = document.getElementById("quiz")
-alert(`if you are stuck .Click the point button to get correct answer
-         getting hints costs 5points
-         answering correct question gives you 3points`)
+// alert(`if you are stuck .Click the point button to get correct answer
+//          getting hints costs 5points
+//          answering correct question gives you 3points`)
 loadQuestions()
 function hint(){
     if(point >= 5) { 
