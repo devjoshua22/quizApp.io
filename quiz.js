@@ -63,21 +63,21 @@ const quizdata = [
      D: "is a less absorbent material than wood",
      correct : "C",
 },
- {
-     question:`The following statements were made by some students describing what happened during the determination of the melting point of solids.
-     1. The temperature of the solid was constant until melting started
-     2. The temperature of the solid rose until melting started
-     3. During melting, the temperature was rising
-     4. During melting, the temperature was constant
-     5. The temperature continued to rise after all the solid had melted.
+//  {
+//      question:`The following statements were made by some students describing what happened during the determination of the melting point of solids.
+//      1. The temperature of the solid was constant until melting started
+//      2. The temperature of the solid rose until melting started
+//      3. During melting, the temperature was rising
+//      4. During melting, the temperature was constant
+//      5. The temperature continued to rise after all the solid had melted.
    
-    The temperature stopped rising after all the solid had melted. Which of the following gives correct statements in the right order? `,
-      A: "2, 4 and 5",
-      B: " 2, 3 and 6" ,
-      C: "1, 3 and 6 ",
-      D: "1, 3 and 5",
-      correct : "A",
- },  
+//     The temperature stopped rising after all the solid had melted. Which of the following gives correct statements in the right order? `,
+//       A: "2, 4 and 5",
+//       B: " 2, 3 and 6" ,
+//       C: "1, 3 and 6 ",
+//       D: "1, 3 and 5",
+//       correct : "A",
+//  },  
  {
     question:"A 1.5kg stone was thrown vertically upward with an initial velocity of 42m/s, What is the potential energy of the stone at the highest point reached. ",
      A: "3.15J ",
