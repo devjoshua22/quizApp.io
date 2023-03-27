@@ -39,30 +39,30 @@ const quizdata = [
         D: "2.5s",
         correct : "B",
     },
-    {
-       question:" The thrust due to hydrostatic pressure alone on the bottom of a fish tank which is 60cm x 40cm when the depth of water is 30cm is?",
-        A: "8N",
-        B: "12N" ,
-        C: "720N",
-        D: "24N",
-        correct : "C",
-   },    
-   {
-    question:"A long jumper leaves the ground at an angle of 20 degrees above the horizontal and at a speed of 11m/s. How far does it jump in the horizontal direction?",
-     A: "0.38m",
-     B: "7.49m" ,
-     C: "8.45m",
-     D: "0m",
-     correct : "B",
-},
-{
-    question:"A silver spoon and a wooden spoon are both at room temperature. The silver spoon is cooler to touch because silver _____.",
-     A: "has a greater density",
-     B: "can be polished" ,
-     C: " is a better conductor of heat",
-     D: "is a less absorbent material than wood",
-     correct : "C",
-},
+//     {
+//        question:" The thrust due to hydrostatic pressure alone on the bottom of a fish tank which is 60cm x 40cm when the depth of water is 30cm is?",
+//         A: "8N",
+//         B: "12N" ,
+//         C: "720N",
+//         D: "24N",
+//         correct : "C",
+//    },    
+//    {
+//     question:"A long jumper leaves the ground at an angle of 20 degrees above the horizontal and at a speed of 11m/s. How far does it jump in the horizontal direction?",
+//      A: "0.38m",
+//      B: "7.49m" ,
+//      C: "8.45m",
+//      D: "0m",
+//      correct : "B",
+// },
+// {
+//     question:"A silver spoon and a wooden spoon are both at room temperature. The silver spoon is cooler to touch because silver _____.",
+//      A: "has a greater density",
+//      B: "can be polished" ,
+//      C: " is a better conductor of heat",
+//      D: "is a less absorbent material than wood",
+//      correct : "C",
+// },
 //  {
 //      question:`The following statements were made by some students describing what happened during the determination of the melting point of solids.
 //      1. The temperature of the solid was constant until melting started
@@ -110,47 +110,47 @@ const quizdata = [
      D: "80.4cm",
      correct : "B",
 }, 
-{
-    question:" A transformer which can produce 10V from a 240V a.c supply has an efficiency of 60%. If the current in the secondary winding coil is 15A, the current in the primary coil is ______?",
-     A: "15.0 A",
-     B: "1.04 A" ,
-     C: "16.04 A",
-     D: "13.96 A",
-     correct : "B",
-}, 
-{
-    question:"The acceleration due to gravity _______?",
-     A: "increases with increasing altitude",
-     B: "decreases with increasing altitude" ,
-     C: "increases with an increase in the square of the altitude",
-     D: "is not affected by the altitude",
-     correct : "B",
-}, 
-{
-    question:"A nail is pulled from a wall with a string tied to the nail. If the string is inclined at an angle of 30 degrees to the wall and the tension in the string is 50N, the effective force used in pulling the nail is:",
-     A: "25N",
-     B: "25 SQRT(3)" ,
-     C: "50 N",
-     D: "50 SQRT(3)",
-     correct : "A",
-}, 
-{
-    question:"The electromagnetic waves that are sensitive to temperature changes are _____?",
-     A: "Ultra-violet rays",
-     B: "Gamma-rays" ,
-     C: "Infra-red rays",
-     D: "X-rays",
-     correct : "C",
-}, 
-{
-    question:" A boy of mass m, suspended from a spring, is put into simple harmonic motion. If the motion has amplitude A and the spring constant k, the maximum potential energy of the mass is",
-     A: "KA",
-     B: "0.5 kA^2" ,
-     C: "MkA",
-     D: "kA^2/m",
-     correct : "B ",
-}, 
 // {
+//     question:" A transformer which can produce 10V from a 240V a.c supply has an efficiency of 60%. If the current in the secondary winding coil is 15A, the current in the primary coil is ______?",
+//      A: "15.0 A",
+//      B: "1.04 A" ,
+//      C: "16.04 A",
+//      D: "13.96 A",
+//      correct : "B",
+// }, 
+// {
+//     question:"The acceleration due to gravity _______?",
+//      A: "increases with increasing altitude",
+//      B: "decreases with increasing altitude" ,
+//      C: "increases with an increase in the square of the altitude",
+//      D: "is not affected by the altitude",
+//      correct : "B",
+// }, 
+// {
+//     question:"A nail is pulled from a wall with a string tied to the nail. If the string is inclined at an angle of 30 degrees to the wall and the tension in the string is 50N, the effective force used in pulling the nail is:",
+//      A: "25N",
+//      B: "25 SQRT(3)" ,
+//      C: "50 N",
+//      D: "50 SQRT(3)",
+//      correct : "A",
+// }, 
+// {
+//     question:"The electromagnetic waves that are sensitive to temperature changes are _____?",
+//      A: "Ultra-violet rays",
+//      B: "Gamma-rays" ,
+//      C: "Infra-red rays",
+//      D: "X-rays",
+//      correct : "C",
+// }, 
+// {
+//     question:" A boy of mass m, suspended from a spring, is put into simple harmonic motion. If the motion has amplitude A and the spring constant k, the maximum potential energy of the mass is",
+//      A: "KA",
+//      B: "0.5 kA^2" ,
+//      C: "MkA",
+//      D: "kA^2/m",
+//      correct : "B ",
+// }, 
+// // {
 //     question:"",
 //      A: "",
 //      B: "" ,
@@ -169,8 +169,82 @@ const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
 const hintEl = document.getElementById("hint")
-let currentQuiz = 0
+let currentQuiz = 8
 const quiz = document.getElementById("quiz")
+var swatches = document.querySelectorAll('#head span');
+var root = document.querySelectorAll(':root');
+var body = document.querySelector('body');
+var tab = document.querySelector('form');
+var labels = document.querySelectorAll('label');
+var buttons = document.querySelectorAll('button');
+var light = document.getElementById('light-mode');
+var dark = document.getElementById('dark-mode');
+var hintText = document.getElementById('hint');
+var end = document.getElementById('end');
+
+
+
+light.addEventListener('click',()=>{
+    body.style.background='#fff';
+    body.style.color = '#333';
+    tab.style.backgroundColor='#fff';
+    tab.style.boxShadow='8px 8px 50px -15px #333';
+
+    buttons.forEach(button =>{
+    button.style.backgroundColor = '#fff'
+    button.style.color='#333'   
+    button.style.boxShadow='8px 8px 50px -15px #333';
+    })
+
+
+    //option image light-mode for A B C and D 
+    labels.forEach(label => {
+        label.style.background ='url(/img/checkbox.png) no-repeat '
+        label.style.backgroundSize ='contain'
+        label.style.display ='inline'
+        label.style.lineHeight ='38px'
+        label.style.margin ='8px'
+        label.style.paddingLeft ='30px' 
+            
+        
+
+
+   });
+// checked boxes on light mode 
+
+})
+
+dark.addEventListener('click',()=>{
+    body.style.background='#333';
+    body.style.color = '#fff';
+    tab.style.backgroundColor='rgb(22, 21, 21)';
+    tab.style.boxShadow='8px 8px 50px -15px #fff';
+    hintText.style.color = '#fff'
+    button.style.backgroundColor = 'rgb(22, 21, 21)'
+    submitBtn.style.backgroundColor = 'rgb(22, 21, 21)'
+    submitBtn.style.color = '#fff'
+    submitBtn.style.boxShadow='8px 8px 50px -15px #fff';
+    hintText.style.boxShadow='8px 8px 50px -15px #fff'
+    //option image light-mode for A B C and D 
+    labels.forEach(label => {
+        label.style.background ='url(/img/checks.png) no-repeat '
+        label.style.backgroundPosition ='0 -31px'
+        label.style.display ='inline-block'
+        label.style.lineHeight ='25px'
+        label.style.margin ='8px'
+        label.style.paddingLeft ='28px' 
+            
+        
+
+
+   });
+// checked boxes on light mode 
+
+})
+
+
+
+
 // alert(`if you are stuck .Click the point button to get correct answer
 //          getting hints costs 5points
 //          answering correct question gives you 3points`)
@@ -218,12 +292,11 @@ function next() {
         if(currentQuiz < quizdata.length){
             loadQuestions()
             perc = Math.floor(scores/quizdata.length*100) 
-            console.log(scores)
         } else{
             quiz.innerHTML = 
             `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
             <p>Your Accuracy was ${Math.floor(scores/quizdata.length*100)}% !</p>
-            <button onclick="location.reload()"> Try Again? </button>`
+            <button onclick="location.reload()" > <p> Try Again? </p></button>`
         }
     }
 }
