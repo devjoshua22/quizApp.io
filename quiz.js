@@ -240,9 +240,9 @@ dark.addEventListener('click',()=>{
 
 
 
-// alert(`if you are stuck .Click the point button to get correct answer
-//          getting hints costs 5points
-//          answering correct question gives you 3points`)
+alert(`if you are stuck .Click the point button to get correct answer
+         getting hints costs 5points
+         answering correct question gives you 3points`)
 loadQuestions()
 
 
