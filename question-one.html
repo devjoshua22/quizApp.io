@@ -8,8 +8,12 @@
     <title>questions</title>
 </head>
 <body>
-    <div id="quiz">
+        <header id="head">
+            <span  id="light-mode"></span>
+            <span  id="dark-mode"></span>
         <button id="hint" onclick="hint()">0Points</button>
+    </header>
+        <div id="quiz">
         <p id="questions"> </p>
         <form >
             <input type="radio" name="answer" value="true"  id="A" class="answer"id="A-text"><label for="A"id="A-text">A.   Answer </label><br>
@@ -18,7 +22,8 @@
             <input type="radio" name="answer" value="false"  id="D"class="answer"id="D-text"><label for="D"id="D-text">D.    Answer </label><br>
        </form>
        <br>
-    <button type="submit" value="submit" id="submit" onclick="next()" ondblclick="next()" onseeked="next()"> <h1>Next</h1></a></button>
+    <button type="submit" value="submit" id="submit" onclick="next()" ondblclick="next()" onseeked="next()"> Next</button>
+
     <script src="quiz.js"></script> 
 </div>
 </body>

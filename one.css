@@ -4,11 +4,13 @@
     --text-color:#fff;
     --box-shadow:8px 8px 40px -19px #fff;
     --hover-box-shadow:8px 8px 50px -15px #fff;
+    color:#fff;
 }
 body{
     background-color:var(--dark-theme);
     background-position: 10px 50px;
     text-align: center;
+    color:var(--text-color);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -25,13 +27,15 @@ body{
     align-items: center;
     justify-content: center;
 }
-
-p { 
+button p{
+    color: var(--text-color);
+}
+p {
     flex-grow: 3;
     display: inline-block;
-    color:var(--text-color);
     font-size: 20px;
     font-weight: 700;
+    cursor: default;
 }
 form {
     flex-grow: 1;
@@ -59,25 +63,43 @@ button {
     border-radius: 2%;
     padding: 5px 5px 5px 5px ;
     margin-top:50px ;
-    border-radius: 3%;
 }
-button h1 {
-   color:var(--text-color);
+#submit {
+    color: var(--text-color);
     font-size: 30px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: 800;
     
 }
+#head span{
+    display: inline;
+    background-size: contain;
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    cursor: pointer;
+}
+#head span:nth-child(1){
+    background:url(/img/brightness1.png) no-repeat;
+    background-size:contain;
+}
+#head span:nth-child(2){
+    margin-left: 45px;
+    background: url(/img/brightness.png) no-repeat;
+    background-size: cover;
+}
+
  #hint{
     padding: 0;
     margin: 0;
     text-align: center;
     margin-left: 85%;
     height: 60px;
+    color: var(--text-color);
     width: 10%;
     border-radius: 50%;
     background-color: var(--button-color);
-    color:var(--text-color);
     box-shadow: var(--box-shadow);
     font-weight: 500;
  }
@@ -92,27 +114,23 @@ button  a {
     box-shadow: var(--hover-box-shadow);
     transform: translateY(-1px);
     }
-    input[type="radio"]{
+    /* input[type="radio"]{
         margin: 0;
         opacity: 0;
         width: 0;
-    }
+    } */
     label[for="A"], label[for="B"], label[for="C"], label[for="D"]{
-        background: url(/img/checks.png) no-repeat;
-        background-position: 0 -31px;
         line-height: 20px;
         height: 20px;
-        color: var(--text-color);
         cursor: pointer;
         display: inline-block;
         margin: 8px;
-        padding-left: 20px;
+        padding-left: 1px;
     }
     input:checked + label[for="A"],input:checked + label[for="B"],input:checked + label[for="C"],
 input:checked + label[for="D"] {
-    background-position: 0 -67px;
     color: crimson;
-}
+} 
  @media screen and (max-width: 500px){
     p{
         font-size: 13px;
@@ -127,7 +145,7 @@ input:checked + label[for="D"] {
         margin-left: 78%;
         font-size:8px;
         font-weight: 900;
-        width: 13%;
+        width: 18%;
        max-height: 50px;
         border-radius: 4%;
         padding: 0 ;
