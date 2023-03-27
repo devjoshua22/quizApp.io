@@ -169,9 +169,9 @@ const cText = document.getElementById("C-text")
 const dText = document.getElementById("D-text")
 const submitBtn = document.getElementById("submit")
 const hintEl = document.getElementById("hint")
-let currentQuiz = 8
+let currentQuiz = 0
 const quiz = document.getElementById("quiz")
-var swatches = document.querySelectorAll('#head span');
+var swatchs = document.querySelectorAll('header');
 var root = document.querySelectorAll(':root');
 var body = document.querySelector('body');
 var tab = document.querySelector('form');
@@ -182,7 +182,7 @@ var dark = document.getElementById('dark-mode');
 var hintText = document.getElementById('hint');
 var end = document.getElementById('end');
 
-
+// light and dark mode feautres
 
 light.addEventListener('click',()=>{
     body.style.background='#fff';
@@ -197,20 +197,18 @@ light.addEventListener('click',()=>{
     })
 
 
-    //option image light-mode for A B C and D 
+    
     labels.forEach(label => {
-        label.style.background ='url(/img/checkbox.png) no-repeat '
-        label.style.backgroundSize ='contain'
-        label.style.display ='inline'
-        label.style.lineHeight ='38px'
+        label.style.display ='inline-block'
+        label.style.lineHeight ='30px'
         label.style.margin ='8px'
-        label.style.paddingLeft ='30px' 
+        label.style.paddingLeft ='2px' 
             
         
 
 
    });
-// checked boxes on light mode 
+
 
 })
 
@@ -219,26 +217,23 @@ dark.addEventListener('click',()=>{
     body.style.color = '#fff';
     tab.style.backgroundColor='rgb(22, 21, 21)';
     tab.style.boxShadow='8px 8px 50px -15px #fff';
-    hintText.style.color = '#fff'
-    button.style.backgroundColor = 'rgb(22, 21, 21)'
-    submitBtn.style.backgroundColor = 'rgb(22, 21, 21)'
-    submitBtn.style.color = '#fff'
-    submitBtn.style.boxShadow='8px 8px 50px -15px #fff';
-    hintText.style.boxShadow='8px 8px 50px -15px #fff'
-    //option image light-mode for A B C and D 
+
+    
     labels.forEach(label => {
-        label.style.background ='url(/img/checks.png) no-repeat '
-        label.style.backgroundPosition ='0 -31px'
         label.style.display ='inline-block'
         label.style.lineHeight ='25px'
         label.style.margin ='8px'
-        label.style.paddingLeft ='28px' 
+        label.style.paddingLeft ='2px' 
             
-        
+        buttons.forEach(button =>{
+            button.style.backgroundColor = 'rgb(22, 21, 21)'
+            button.style.color='#fff'   
+            button.style.boxShadow='8px 8px 50px -15px #fff';
+            })
 
 
    });
-// checked boxes on light mode 
+
 
 })
 
@@ -249,6 +244,8 @@ dark.addEventListener('click',()=>{
 //          getting hints costs 5points
 //          answering correct question gives you 3points`)
 loadQuestions()
+
+
 function hint(){
     if(point >= 5) { 
         alert("this will cost you 5 points")
@@ -293,6 +290,9 @@ function next() {
             loadQuestions()
             perc = Math.floor(scores/quizdata.length*100) 
         } else{
+            swatchs.forEach(swatch=>{
+                swatch.innerHTML = ``
+            })
             quiz.innerHTML = 
             `<p> You answered ${scores}/${quizdata.length} questions correctly </p>
             <p>Your Accuracy was ${Math.floor(scores/quizdata.length*100)}% !</p>

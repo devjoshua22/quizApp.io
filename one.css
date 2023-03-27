@@ -27,12 +27,15 @@ body{
     align-items: center;
     justify-content: center;
 }
-
+button p{
+    color: var(--text-color);
+}
 p {
     flex-grow: 3;
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
+    cursor: default;
 }
 form {
     flex-grow: 1;
@@ -111,26 +114,23 @@ button  a {
     box-shadow: var(--hover-box-shadow);
     transform: translateY(-1px);
     }
-    input[type="radio"]{
+    /* input[type="radio"]{
         margin: 0;
         opacity: 0;
         width: 0;
-    }
+    } */
     label[for="A"], label[for="B"], label[for="C"], label[for="D"]{
-        background: url(/img/checks.png) no-repeat;
-        background-position: 0 -31px;
         line-height: 20px;
         height: 20px;
         cursor: pointer;
         display: inline-block;
         margin: 8px;
-        padding-left: 20px;
+        padding-left: 1px;
     }
     input:checked + label[for="A"],input:checked + label[for="B"],input:checked + label[for="C"],
 input:checked + label[for="D"] {
-    background-position: 0 -67px;
     color: crimson;
-}
+} 
  @media screen and (max-width: 500px){
     p{
         font-size: 13px;
