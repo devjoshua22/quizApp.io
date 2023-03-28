@@ -81,7 +81,7 @@ button {
     cursor: pointer;
 }
 #head span:nth-child(1){
-    background:url(/img/brightness1.png) no-repeat;
+    background:url(/img/brightness-two.png) no-repeat;
     background-size:contain;
 }
 #head span:nth-child(2){
